@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.daedalus.aamarillas</groupId>
+  <artifactId>springapp</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>springapp Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <build>
+    <finalName>springapp</finalName>
+  </build>
+  <properties>
+  	<Version4.1.6>org.springframework.version: 4.1.6.RELEASE</Version4.1.6>
+  </properties>
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<scope>test</scope>
+  	</dependency>
+  </dependencies>
+</project>
