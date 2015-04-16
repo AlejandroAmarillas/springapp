@@ -16,9 +16,8 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloController{
 
-    System.out.println("punto de control 0");
     protected final Log logger = LogFactory.getLog(getClass());
-    System.out.println("punto de control 1");
+    
     @RequestMapping(value="/hello.htm")
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -26,7 +25,6 @@ public class HelloController{
         String now = (new Date()).toString();
         logger.info("Returning hello view with " + now);
 
-        System.out.println("punto de control 3  "+ now);
         return new ModelAndView("WEB-INF/views/hello.jsp", "now", now);
 
     }
